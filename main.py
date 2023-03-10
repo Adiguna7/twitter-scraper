@@ -21,11 +21,12 @@ def find_followers_count_and_latest_tweet(user: str):
         save_dir='temp'
     )
     latest_tweet = tweet['Tweet URL'].iloc[0] if len(tweet) > 0 else None
-    print(f"===== time taken for latest tweet: {datetime.datetime.now() - time_start} =====")
+    time_checkpoint = datetime.datetime.now()
+    print(f"===== time taken for latest tweet: {time_checkpoint - time_start} =====")
 
     user_info = get_user_information([user])
     followers_count = user_info[user][1] if user_info else None
-    print(f"===== time taken for followers count: {datetime.datetime.now() - time_start} =====")
+    print(f"===== time taken for followers count: {datetime.datetime.now() - time_checkpoint} =====")
     
     return followers_count, latest_tweet
 
