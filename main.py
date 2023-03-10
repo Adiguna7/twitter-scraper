@@ -35,7 +35,7 @@ with open('twitter-leaks-10000.csv', 'r') as f:
     reader = csv.reader(f)
     raw_users = list(reader)
 
-users = [user[3] for user in raw_users[1:11]]
+users = [user[3] for user in raw_users[1:]]
 
 final_users_info = {}
 
