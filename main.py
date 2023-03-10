@@ -1,5 +1,5 @@
-from Scweet.scweet import scrape
-from Scweet.user import get_user_information, get_users_following, get_users_followers
+from refactored.scweet import scrape
+from refactored.user import get_user_information
 from shutil import rmtree
 
 import datetime
