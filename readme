@@ -1,0 +1,2 @@
+manage.py for async scrape using beanstalkd
+main.py for sync scrape
