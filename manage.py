@@ -186,7 +186,7 @@ def _get_username_list():
         reader = csv.reader(f)
         raw_users = list(reader)
 
-    return [user[3] for user in raw_users[1:2]]
+    return [user[3] for user in raw_users[1:52]]
 
 
 if __name__ == '__main__':
